@@ -1,0 +1,12 @@
+mcp>=1.10.1
+pydantic
+fastapi
+uvicorn
+cachetools
+fastapi
+uvicorn
+langchain
+google-generativeai
+asyncio
+langchain-community
+langchain-google-genai
