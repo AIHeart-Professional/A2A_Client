@@ -10,3 +10,5 @@ google-generativeai
 asyncio
 langchain-community
 langchain-google-genai
+langsmith
+colorlog
