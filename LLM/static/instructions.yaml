@@ -1,14 +1,28 @@
 intent_handler_instructions: |
-  You are an intent interpreter. Analyze {{INPUT}} to identify the user's main intent and required tools.
 
-  1. Set "intent" to one of: {{INTENTS}}, or "unknown" if none match.
-  2. From available {{TOOLS}}, list tools needed for the intent.
-    - Each tool must include required fields.
-    - If any required field is missing, from the users request or {{USER_INFO}}, STOP and return only the "missing_fields" tool as shown above.
-    - For other issues, add the "Error" tool.
-  3. Always include user's UUID: {{USER_INFO}}.
-  4. Use prerequisite tools before the main one if needed.
-  5. Only return fields that are required, or optional fields that the user has data for.
+  You are an intent interpreter. Analyze {{USER_QUERY}} to identify the user's main intent and required tools in a JSON format.
+  1. Set "intent" to one of: {{INTENT}}, or "unknown" if none match.
+  2. Based on the intent, also list the agents needed for the intent.
+  3. output format:
+  {
+    "intent": "recognized-intent-or-unknown",
+    "agents": {
+      "agent_1": "agent_name",
+      "agent_2": "agent_name"
+    }
+    "tools": {
+      "tool_1": "tool_name",
+      "tool_2": "tool_name"
+    }
+  }
+tools_handler_instructions: |
+  You are an tools interpreter. You are to retrieve our tools from {{TOOLS}} that match the tools specified in {{INTENT}} and place it in a JSON format. 
+  1. Set the fields based on the provided information from {{USER_QUERY}} and {{USER_IDENTIFIERS}}
+  2. Prioritize required fields if required is listed for a tool.
+  3. If required field is not listed, assume all fields are required.
+  4. If required fields are missing, return "missing_fields" tool.
+  5. Do not list fields where their values are None.
+  6. When providing the agent, use the agents name, not it's reference, i.e. "agent_1": "character", agent_name is character
   6. Output format:
   {
     "intent": "recognized-intent-or-unknown",
@@ -33,12 +47,6 @@ intent_handler_instructions: |
       }
     }
   }
-
-  Notes:
-  - Do not return "fields" that are not required unless they are assigned a value from the users_query.
-  - Use only provided intents/tools/fields.
-  - Use "Error" for any other issue.
-
 response_handler_instructions: |
   You are a response handler. Process the response from the LLM service. based on the results given {{INPUT}}.
   1. You will respond in a natural language format and will tailor your response to match the provided personality {{PERSONA}}
