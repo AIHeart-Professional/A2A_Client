@@ -563,3 +563,496 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 2025-07-26 11:25:30,472 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
 2025-07-26 11:25:30,473 - ERROR - app.py - 28 - app: Error in MCP workflow: Error importing agent: No module named 'Agents.agent_1'
 2025-07-26 11:27:02,892 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-07-26 11:27:13,850 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-26 11:27:15,677 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-26 11:27:16,167 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-26 11:27:17,853 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-26 11:27:21,373 - INFO - app.py - 21 - app: Intent determined: create_character
+2025-07-26 11:27:21,373 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'check_character_limit', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'check_for_active_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_3': {'agent': 'character', 'tool': {'name': 'create_character', 'fields': {'characters_name': 'leeroy', 'characters_class': 'warrior', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}}
+2025-07-26 11:27:21,897 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-26 11:58:32,498 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-26 11:58:32,958 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-26 11:58:34,442 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-26 11:58:38,090 - INFO - app.py - 21 - app: Intent determined: create_character
+2025-07-26 11:58:38,091 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'check_character_limit', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'check_for_active_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_3': {'agent': 'character', 'tool': {'name': 'create_character', 'fields': {'first_name': None, 'last_name': None, 'characters_name': 'leeroy', 'characters_class': 'warrior', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}}
+2025-07-26 11:58:43,591 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-26 12:09:26,869 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-26 12:09:27,234 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-26 12:09:27,740 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-26 12:09:29,612 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-26 12:09:33,215 - INFO - app.py - 21 - app: Intent determined: create_character
+2025-07-26 12:09:33,215 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'check_character_limit', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'check_for_active_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_3': {'agent': 'character', 'tool': {'name': 'create_character', 'fields': {'first_name': None, 'last_name': None, 'characters_name': 'leeroy', 'characters_class': 'warrior', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}}
+2025-07-26 12:09:38,652 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-26 12:10:41,127 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-26 12:10:41,556 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-26 12:10:42,985 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-26 12:10:46,431 - INFO - app.py - 21 - app: Intent determined: create_character
+2025-07-26 12:10:46,432 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'check_character_limit', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'check_for_active_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_3': {'agent': 'character', 'tool': {'name': 'create_character', 'fields': {'first_name': None, 'last_name': None, 'characters_name': 'leeroy', 'characters_class': 'warrior', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}}
+2025-07-26 12:10:46,883 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-26 13:12:29,227 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-26 16:05:04,421 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-07-26 16:05:13,373 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-26 20:33:36,497 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-26 20:33:37,033 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-26 20:33:38,762 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 500 Internal Server Error"
+2025-07-26 20:33:38,763 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: Server error '500 Internal Server Error' for url 'http://localhost:8001/MCPServer/available_tools'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-07-26 20:34:40,828 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-26 20:34:41,282 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-26 20:34:52,769 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-26 20:35:08,438 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-26 20:35:08,867 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-26 20:35:20,328 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-26 20:45:32,412 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-26 20:45:32,841 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-26 20:45:36,448 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-26 20:45:40,003 - INFO - app.py - 21 - app: Intent determined: create_character
+2025-07-26 20:45:40,004 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'check_character_limit', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'character_name_available', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'character_name': 'leeroy'}}}, 'task_3': {'agent': 'character', 'tool': {'name': 'create_character', 'fields': {'characters_name': 'leeroy', 'characters_class': 'warrior', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'character_tag': 'LEEROY#12AB'}}}}
+2025-07-26 20:45:40,767 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-26 20:45:40,768 - ERROR - app.py - 28 - app: Error in MCP workflow: Tool function not found for action: character_name_available
+2025-07-26 20:53:28,690 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-26 20:53:29,122 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-26 20:53:30,575 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-26 20:53:33,989 - INFO - app.py - 21 - app: Intent determined: create_character
+2025-07-26 20:53:33,990 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'check_character_limit', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'character_name_available', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'character_name': 'leeroy'}}}, 'task_3': {'agent': 'character', 'tool': {'name': 'create_character', 'fields': {'characters_name': 'leeroy', 'characters_class': 'warrior', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'character_tag': 'LEEROY#12AB'}}}}
+2025-07-26 20:53:34,728 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-26 20:53:34,730 - ERROR - app.py - 28 - app: Error in MCP workflow: Tool function not found for action: character_name_available
+2025-07-26 20:57:17,371 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-26 20:57:17,798 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-26 20:57:19,319 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-26 20:57:22,632 - INFO - app.py - 21 - app: Intent determined: create_character
+2025-07-26 20:57:22,633 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'check_character_limit', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'character_name_available', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'character_name': 'leeroy'}}}, 'task_3': {'agent': 'character', 'tool': {'name': 'create_character', 'fields': {'characters_name': 'leeroy', 'characters_class': 'warrior', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'character_tag': 'LEEROY#12AB'}}}}
+2025-07-26 20:57:23,390 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-26 20:58:56,629 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-26 20:58:57,149 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-26 20:58:58,709 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-26 20:59:01,976 - INFO - app.py - 21 - app: Intent determined: create_character
+2025-07-26 20:59:01,977 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'check_character_limit', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'character_name_available', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'character_name': 'leeroy'}}}, 'task_3': {'agent': 'character', 'tool': {'name': 'create_character', 'fields': {'characters_name': 'leeroy', 'characters_class': 'warrior', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'character_tag': 'LEEROY#12AB'}}}}
+2025-07-26 20:59:02,589 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-26 21:00:02,400 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-26 21:00:02,829 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-26 21:00:04,334 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-26 21:00:07,630 - INFO - app.py - 21 - app: Intent determined: create_character
+2025-07-26 21:00:07,631 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'check_character_limit', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'character_name_available', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'character_name': 'leeroy'}}}, 'task_3': {'agent': 'character', 'tool': {'name': 'create_character', 'fields': {'characters_name': 'leeroy', 'characters_class': 'warrior', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'character_tag': 'LEEROY#12AB'}}}}
+2025-07-26 21:00:13,068 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-26 21:02:51,865 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-07-26 21:03:03,254 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-26 21:03:15,300 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-26 21:03:15,883 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-26 21:03:17,613 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-26 21:03:21,008 - INFO - app.py - 21 - app: Intent determined: create_character
+2025-07-26 21:03:21,009 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'check_character_limit', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'character_name_available', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'character_name': 'leeroy'}}}, 'task_3': {'agent': 'character', 'tool': {'name': 'create_character', 'fields': {'characters_name': 'leeroy', 'characters_class': 'warrior', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'character_tag': 'LEEROY0001'}}}}
+2025-07-26 21:03:26,535 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-26 21:38:08,295 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-07-26 21:38:19,676 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-26 21:38:21,376 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-26 21:38:21,868 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-26 21:38:23,682 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-26 21:38:27,093 - INFO - app.py - 21 - app: Intent determined: create_character
+2025-07-26 21:38:27,093 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'check_character_limit', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'character_name_available', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'character_name': 'leeroy', 'character_tag': '#A1B2'}}}, 'task_3': {'agent': 'character', 'tool': {'name': 'create_character', 'fields': {'characters_name': 'leeroy', 'characters_tag': '#A1B2', 'characters_class': 'warrior', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}}
+2025-07-26 21:38:32,611 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-26 21:39:19,803 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-07-26 21:39:31,081 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-26 21:42:10,170 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-26 21:42:10,658 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-26 21:42:12,331 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-26 21:42:15,641 - INFO - app.py - 21 - app: Intent determined: create_character
+2025-07-26 21:42:15,642 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'check_character_limit', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'character_name_available', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'character_name': 'leeroy'}}}, 'task_3': {'agent': 'character', 'tool': {'name': 'create_character', 'fields': {'characters_name': 'leeroy', 'characters_tag': 'leeroy#7321', 'characters_class': 'warrior', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}}
+2025-07-26 21:42:21,082 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-26 21:43:52,479 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-07-26 21:44:03,414 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-26 21:44:09,686 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-26 21:44:10,174 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-26 21:44:11,910 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-26 21:44:15,545 - ERROR - llm_service.py - 68 - llm_service: Failed to parse LLM response as JSON: Expecting ',' delimiter: line 21 column 42 (char 582). Raw response: {
+  "intent": "create_character",
+  "tasks": {
+    "task_1": {
+      "agent": "character",
+      "tool": {
+        "name": "check_character_limit",
+        "fields": {
+          "server_id": "123e4567-e89b-12d3-a456-426614174111",
+          "user_id": "123e4567-e89b-12d3-a456-426614174000"
+        }
+      }
+    },
+    "task_2": {
+      "agent": "character",
+      "tool": {
+        "name": "character_name_available",
+        "fields": {
+          "server_id": "123e4567-e89b-12d3-a456-426614174111",
+          "character_name": "leeroy",
+          "character_tag": "leeroy#7321" //Example random tag.  A true implementation would use a random number generator.
+        }
+      }
+    },
+    "task_3": {
+      "agent": "character",
+      "tool": {
+        "name": "create_character",
+        "fields": {
+          "characters_name": "leeroy",
+          "characters_tag": "leeroy#7321", 
+          "characters_class": "warrior",
+          "user_id": "123e4567-e89b-12d3-a456-426614174000",
+          "server_id": "123e4567-e89b-12d3-a456-426614174111"
+        }
+      }
+    }
+  }
+}
+2025-07-26 21:44:15,547 - INFO - app.py - 21 - app: Intent determined: None
+2025-07-26 21:44:15,547 - INFO - app.py - 22 - app: Tasks determined: None
+2025-07-26 21:44:16,060 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 500 Internal Server Error"
+2025-07-26 21:44:16,062 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: Server error '500 Internal Server Error' for url 'http://localhost:8001/orchestrator'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-07-26 21:44:38,766 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-26 21:44:39,206 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-26 21:44:40,706 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-26 21:44:44,232 - ERROR - llm_service.py - 68 - llm_service: Failed to parse LLM response as JSON: Expecting ',' delimiter: line 21 column 42 (char 582). Raw response: {
+  "intent": "create_character",
+  "tasks": {
+    "task_1": {
+      "agent": "character",
+      "tool": {
+        "name": "check_character_limit",
+        "fields": {
+          "server_id": "123e4567-e89b-12d3-a456-426614174111",
+          "user_id": "123e4567-e89b-12d3-a456-426614174000"
+        }
+      }
+    },
+    "task_2": {
+      "agent": "character",
+      "tool": {
+        "name": "character_name_available",
+        "fields": {
+          "server_id": "123e4567-e89b-12d3-a456-426614174111",
+          "character_name": "leeroy",
+          "character_tag": "leeroy#7214" // Example random tag
+        }
+      }
+    },
+    "task_3": {
+      "agent": "character",
+      "tool": {
+        "name": "create_character",
+        "fields": {
+          "characters_name": "leeroy",
+          "characters_tag": "leeroy#7214",
+          "characters_class": "warrior",
+          "user_id": "123e4567-e89b-12d3-a456-426614174000",
+          "server_id": "123e4567-e89b-12d3-a456-426614174111"
+        }
+      }
+    }
+  }
+}
+2025-07-26 21:44:44,233 - INFO - app.py - 21 - app: Intent determined: None
+2025-07-26 21:44:44,234 - INFO - app.py - 22 - app: Tasks determined: None
+2025-07-26 21:44:44,735 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 500 Internal Server Error"
+2025-07-26 21:44:44,737 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: Server error '500 Internal Server Error' for url 'http://localhost:8001/orchestrator'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-07-26 21:45:21,183 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-26 21:45:21,608 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-26 21:45:23,074 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-26 21:45:26,555 - INFO - app.py - 21 - app: Intent determined: create_character
+2025-07-26 21:45:26,555 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'check_character_limit', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'character_name_available', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'character_name': 'leeroy'}}}, 'task_3': {'agent': 'character', 'tool': {'name': 'create_character', 'fields': {'characters_name': 'leeroy', 'characters_tag': 'leeroy#7321', 'characters_class': 'warrior', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}}
+2025-07-26 21:46:10,537 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-26 21:46:33,923 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-07-26 21:46:44,916 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-26 21:47:02,153 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-26 21:47:02,742 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-26 21:47:04,452 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-26 21:47:07,759 - INFO - app.py - 21 - app: Intent determined: create_character
+2025-07-26 21:47:07,759 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'check_character_limit', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'character_name_available', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'character_name': 'leeroy'}}}, 'task_3': {'agent': 'character', 'tool': {'name': 'create_character', 'fields': {'characters_name': 'leeroy', 'characters_tag': 'leeroy#7321', 'characters_class': 'warrior', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}}
+2025-07-26 21:51:37,912 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-26 21:51:40,464 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-26 21:51:40,988 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-26 21:51:42,668 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-26 21:51:46,050 - INFO - app.py - 21 - app: Intent determined: create_character
+2025-07-26 21:51:46,050 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'check_character_limit', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'character_name_available', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'character_name': 'leeroy', 'character_tag': '1234'}}}, 'task_3': {'agent': 'character', 'tool': {'name': 'create_character', 'fields': {'characters_name': 'leeroy#1234', 'characters_tag': '1234', 'characters_class': 'warrior', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}}
+2025-07-26 21:53:02,794 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-26 21:53:03,621 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-07-26 21:53:14,917 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-26 21:53:27,818 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-26 21:53:28,308 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-26 21:53:29,988 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-26 21:53:33,411 - INFO - app.py - 21 - app: Intent determined: create_character
+2025-07-26 21:53:33,411 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'check_character_limit', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'character_name_available', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'character_name': 'leeroy'}}}, 'task_3': {'agent': 'character', 'tool': {'name': 'create_character', 'fields': {'characters_name': 'leeroy', 'characters_tag': '1234', 'characters_class': 'warrior', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}}
+2025-07-26 21:54:54,063 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-26 21:54:58,215 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-07-26 21:55:09,317 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-26 21:55:16,264 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-26 21:55:16,754 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-26 21:55:18,520 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-26 21:55:21,911 - INFO - app.py - 21 - app: Intent determined: create_character
+2025-07-26 21:55:21,912 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'check_character_limit', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'character_name_available', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'character_name': 'leeroy', 'character_tag': '1354'}}}, 'task_3': {'agent': 'character', 'tool': {'name': 'create_character', 'fields': {'characters_name': 'leeroy', 'characters_tag': '1354', 'characters_class': 'warrior', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}}
+2025-07-27 09:40:49,057 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-27 09:40:57,251 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 09:40:57,738 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 09:40:59,412 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 09:41:02,761 - INFO - app.py - 21 - app: Intent determined: create_character
+2025-07-27 09:41:02,762 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'check_character_limit', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'character_name_available', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'character_name': 'leeroy'}}}, 'task_3': {'agent': 'character', 'tool': {'name': 'create_character', 'fields': {'characters_name': 'leeroy', 'characters_tag': '1234', 'characters_class': 'warrior', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}}
+2025-07-27 09:41:06,396 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-27 09:57:58,053 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 09:57:58,493 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 09:58:00,859 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 09:58:02,555 - INFO - app.py - 21 - app: Intent determined: unknown
+2025-07-27 09:58:02,556 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': None, 'tool': {'name': 'update_user_birthday', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'new_birthday': '12/14/25'}}}}
+2025-07-27 09:58:02,980 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-27 09:58:02,981 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 'str' object has no attribute 'get'
+2025-07-27 09:59:13,401 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 09:59:13,817 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 09:59:14,969 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 09:59:26,568 - INFO - app.py - 21 - app: Intent determined: unknown
+2025-07-27 09:59:26,569 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': None, 'tool': {'name': 'missing_fields', 'fields': {}}}}
+2025-07-27 09:59:27,087 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-27 09:59:27,088 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 'str' object has no attribute 'get'
+2025-07-27 09:59:34,670 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-07-27 09:59:45,663 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-27 09:59:55,924 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 09:59:56,400 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 09:59:57,944 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 10:00:03,272 - INFO - app.py - 21 - app: Intent determined: unknown
+2025-07-27 10:00:03,273 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'tool': {'name': 'missing_fields', 'fields': {}}}}
+2025-07-27 10:00:03,775 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-27 10:00:03,777 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 'str' object has no attribute 'get'
+2025-07-27 10:05:35,331 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-07-27 10:05:46,525 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-27 10:10:14,993 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 10:10:15,555 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 10:10:16,790 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 10:34:21,486 - INFO - app.py - 21 - app: Intent determined: unknown
+2025-07-27 10:34:21,487 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': None, 'tool': {'name': 'change_birthday', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'new_birthday': '12/14/25'}}}}
+2025-07-27 10:34:21,935 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-27 10:34:21,936 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 'str' object has no attribute 'get'
+2025-07-27 10:34:23,943 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-07-27 10:34:35,071 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-27 10:34:40,748 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 10:34:41,221 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 10:34:42,464 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 10:35:15,419 - INFO - app.py - 21 - app: Intent determined: unknown
+2025-07-27 10:35:15,420 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': None, 'tool': {'name': 'update_user_profile', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/14/25'}}}}
+2025-07-27 10:35:15,840 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-27 10:35:15,842 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 'str' object has no attribute 'get'
+2025-07-27 10:35:53,975 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 10:35:54,392 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 10:35:55,832 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 10:36:34,418 - INFO - app.py - 21 - app: Intent determined: update_character
+2025-07-27 10:36:34,419 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/14/25'}}}}
+2025-07-27 10:36:55,332 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 10:37:26,587 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 10:37:27,014 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 10:37:28,516 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 10:37:42,279 - INFO - app.py - 21 - app: Intent determined: update_character
+2025-07-27 10:37:42,280 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/14/25'}}}}
+2025-07-27 10:37:47,717 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 10:48:19,730 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 10:48:30,156 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 10:48:34,283 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 10:48:44,718 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 10:48:52,250 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 10:48:59,706 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 10:49:01,244 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 10:49:39,005 - INFO - app.py - 21 - app: Intent determined: update_character
+2025-07-27 10:49:39,006 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/14/25'}}}}
+2025-07-27 10:52:39,209 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-27 10:52:42,566 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 10:52:43,072 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 10:52:44,665 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 10:52:48,139 - INFO - app.py - 21 - app: Intent determined: update_character
+2025-07-27 10:52:48,140 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'character_name_available', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'character_name': 'character_name#1234'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_3': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/14/25'}}}}
+2025-07-27 10:53:59,819 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 10:59:38,203 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 10:59:38,716 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 10:59:40,124 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 10:59:42,680 - INFO - app.py - 21 - app: Intent determined: update_character
+2025-07-27 10:59:42,681 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/14/25'}}}}
+2025-07-27 10:59:48,167 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 11:39:49,740 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 11:39:50,167 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 11:39:51,605 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 11:39:54,185 - INFO - app.py - 21 - app: Intent determined: update_character
+2025-07-27 11:39:54,186 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/14/25'}}}}
+2025-07-27 11:39:59,631 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 11:40:47,288 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 11:40:47,715 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 11:40:49,184 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 11:40:51,752 - INFO - app.py - 21 - app: Intent determined: update_character
+2025-07-27 11:40:51,753 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/14/25'}}}}
+2025-07-27 11:40:57,182 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 11:44:43,692 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 11:44:44,108 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 11:44:45,518 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 11:44:48,100 - INFO - app.py - 21 - app: Intent determined: update_character
+2025-07-27 11:44:48,101 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/14/25'}}}}
+2025-07-27 11:44:53,596 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 11:49:35,111 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 11:49:45,626 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 11:52:26,872 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 11:52:27,293 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 11:52:28,577 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 11:52:30,934 - INFO - app.py - 21 - app: Intent determined: update_character
+2025-07-27 11:52:30,935 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/14/25'}}}}
+2025-07-27 11:52:36,442 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 12:02:19,280 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 12:02:19,709 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 12:02:21,110 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 12:02:23,699 - INFO - app.py - 21 - app: Intent determined: update_character_information
+2025-07-27 12:02:23,699 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/14/25'}}}}
+2025-07-27 12:02:29,199 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 12:03:36,681 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 12:03:37,110 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 12:03:38,585 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 12:03:41,158 - INFO - app.py - 21 - app: Intent determined: update_character_information
+2025-07-27 12:03:41,159 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/14/25'}}}}
+2025-07-27 12:03:46,648 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 12:07:08,206 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 12:07:08,638 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 12:07:10,057 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 12:07:12,634 - INFO - app.py - 21 - app: Intent determined: update_character_information
+2025-07-27 12:07:12,635 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/14/25'}}}}
+2025-07-27 12:07:18,071 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 12:09:46,384 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 12:09:46,821 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 12:09:48,256 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 12:09:50,849 - INFO - app.py - 21 - app: Intent determined: update_character_information
+2025-07-27 12:09:50,850 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/14/25'}}}}
+2025-07-27 12:09:56,363 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 12:11:16,733 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 12:11:17,145 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 12:11:18,602 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 12:11:21,156 - INFO - app.py - 21 - app: Intent determined: update_character_information
+2025-07-27 12:11:21,156 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/14/25'}}}}
+2025-07-27 12:11:26,593 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 12:11:55,740 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 12:11:56,155 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 12:11:57,627 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 12:12:00,109 - INFO - app.py - 21 - app: Intent determined: update_character_information
+2025-07-27 12:12:00,109 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/14/25'}}}}
+2025-07-27 12:12:05,536 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 12:14:23,401 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 12:14:23,831 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 12:14:25,295 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 12:14:27,835 - INFO - app.py - 21 - app: Intent determined: update_character_information
+2025-07-27 12:14:27,836 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/14/25'}}}}
+2025-07-27 12:14:33,324 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 12:15:52,992 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 12:15:53,416 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 12:15:54,791 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 12:15:57,419 - INFO - app.py - 21 - app: Intent determined: update_character_information
+2025-07-27 12:15:57,419 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/14/25'}}}}
+2025-07-27 12:15:58,244 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-27 12:15:58,245 - ERROR - app.py - 28 - app: Error in MCP workflow: Failed to update character: The dollar ($) prefixed field '$set' in '$set' is not allowed in the context of an update's replacement document. Consider using an aggregation pipeline with $replaceWith., full error: {'index': 0, 'code': 52, 'errmsg': "The dollar ($) prefixed field '$set' in '$set' is not allowed in the context of an update's replacement document. Consider using an aggregation pipeline with $replaceWith."}
+2025-07-27 12:16:17,149 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 12:16:17,610 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 12:16:19,104 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 12:16:21,837 - INFO - app.py - 21 - app: Intent determined: update_character_information
+2025-07-27 12:16:21,838 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/14/25'}}}}
+2025-07-27 12:16:27,307 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 12:17:36,412 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 12:17:36,842 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 12:17:38,311 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 12:17:40,983 - INFO - app.py - 21 - app: Intent determined: update_character_information
+2025-07-27 12:17:40,983 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/14/25'}}}}
+2025-07-27 12:17:46,439 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 12:19:47,981 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 12:19:48,409 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 12:19:49,847 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 12:19:52,405 - INFO - app.py - 21 - app: Intent determined: update_character_information
+2025-07-27 12:19:52,406 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/14/25'}}}}
+2025-07-27 12:19:57,846 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 12:21:09,618 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 12:21:10,044 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 12:21:11,525 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 12:21:14,186 - INFO - app.py - 21 - app: Intent determined: update_character_information
+2025-07-27 12:21:14,186 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/14/25'}}}}
+2025-07-27 12:21:14,812 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-27 12:21:14,813 - ERROR - app.py - 28 - app: Error in MCP workflow: No character found with the provided ID.
+2025-07-27 12:22:48,714 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 12:22:49,130 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 12:22:50,544 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 12:22:53,168 - INFO - app.py - 21 - app: Intent determined: update_character_information
+2025-07-27 12:22:53,169 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/14/25'}}}}
+2025-07-27 12:22:53,848 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-27 12:24:54,339 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 12:24:54,822 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 12:24:56,332 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 12:24:58,937 - INFO - app.py - 21 - app: Intent determined: update_character_information
+2025-07-27 12:24:58,937 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/24/25'}}}}
+2025-07-27 12:25:04,420 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 12:26:04,473 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 12:26:04,886 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 12:26:06,357 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 12:26:09,000 - INFO - app.py - 21 - app: Intent determined: update_character_information
+2025-07-27 12:26:09,000 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '12/24/25'}}}}
+2025-07-27 12:26:09,832 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-27 12:44:20,004 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 12:44:20,435 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 12:44:21,827 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 12:44:24,291 - INFO - app.py - 21 - app: Intent determined: update_character_information
+2025-07-27 12:44:24,292 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '1/24/25'}}}}
+2025-07-27 12:44:29,734 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 12:47:30,998 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 12:47:31,412 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 12:47:32,852 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 12:47:35,400 - INFO - app.py - 21 - app: Intent determined: update_character_information
+2025-07-27 12:47:35,400 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '1/24/25'}}}}
+2025-07-27 12:47:40,827 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 12:48:26,812 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 12:48:27,306 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 12:48:28,756 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 12:48:31,262 - INFO - app.py - 21 - app: Intent determined: update_character_information
+2025-07-27 12:48:31,262 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '1/24/25'}}}}
+2025-07-27 12:48:36,788 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 12:49:48,638 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 12:49:49,062 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 12:49:50,409 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 12:49:53,034 - INFO - app.py - 21 - app: Intent determined: update_character_information
+2025-07-27 12:49:53,035 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '1/24/25'}}}}
+2025-07-27 12:49:58,452 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 12:51:05,543 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 12:51:05,966 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 12:51:07,374 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 12:51:09,932 - INFO - app.py - 21 - app: Intent determined: update_character_information
+2025-07-27 12:51:09,932 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '1/24/25'}}}}
+2025-07-27 12:51:15,366 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 12:52:53,602 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 12:52:54,018 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 12:52:55,461 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 12:52:58,001 - INFO - app.py - 21 - app: Intent determined: update_character_information
+2025-07-27 12:52:58,001 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '1/24/25'}}}}
+2025-07-27 12:53:02,118 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-27 12:57:20,740 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 12:57:21,247 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 12:57:22,872 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 12:57:25,325 - INFO - app.py - 21 - app: Intent determined: update_character_information
+2025-07-27 12:57:25,326 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'update_character', 'fields': {'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111', 'birthday': '1/1/25'}}}}
+2025-07-27 12:57:30,839 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 13:12:03,540 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 13:12:03,973 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 13:12:05,422 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 13:12:07,762 - INFO - app.py - 21 - app: Intent determined: delete_character
+2025-07-27 13:12:07,763 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'character_name_available', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'character_name': 'leeroy', 'character_tag': '1234'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'delete_character', 'fields': {'character_name': 'leeroy', 'character_tag': '1234', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}}
+2025-07-27 13:12:08,519 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-27 13:12:08,520 - ERROR - app.py - 28 - app: Error in MCP workflow: Character name 'leeroy' is already taken on this server.
+2025-07-27 13:12:43,985 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 13:12:44,437 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 13:12:45,863 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 13:12:48,644 - INFO - app.py - 21 - app: Intent determined: delete_character
+2025-07-27 13:12:48,645 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'delete_character', 'fields': {'character_name': 'leeroy', 'character_tag': '1234', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'character_name': 'leeroy', 'character_tag': '1234'}}}}
+2025-07-27 13:12:54,151 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 13:16:35,047 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 13:16:35,506 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 13:16:36,967 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 13:16:39,723 - INFO - app.py - 21 - app: Intent determined: delete_character
+2025-07-27 13:16:39,724 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'delete_character', 'fields': {'character_name': 'leeroy', 'character_tag': '1234', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'character_name': 'leeroy', 'character_tag': '1234'}}}}
+2025-07-27 13:18:59,765 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-27 13:19:09,134 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 13:19:09,610 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 13:19:11,170 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 13:19:13,932 - INFO - app.py - 21 - app: Intent determined: delete_character
+2025-07-27 13:19:13,933 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'delete_character', 'fields': {'character_name': 'leeroy', 'character_tag': '1234', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'character_name': 'leeroy', 'character_tag': '1234'}}}}
