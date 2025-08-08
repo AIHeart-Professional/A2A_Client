@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import Optional, Dict, Any
-from mcp_client.app import execute_request
+from a2a_client.app import execute_request
 import logging
 
 # Configure logging
@@ -24,18 +24,14 @@ async def shutdown_event():
     logging.info("Application shutdown...")
 
 # --- API Models and Endpoints ---
-
 class UserInfo(BaseModel):
     user_id: str
     server_id: str
     
-class InitialRequest(BaseModel):
+class QueryRequest(BaseModel):
     user_query: str
     user_info: UserInfo
-
-class QueryRequest(BaseModel):
-    initial_request: InitialRequest
-
+    
 @app.post("/MCPClient/requestHandler")
 async def interpret_query(request: QueryRequest):
     """

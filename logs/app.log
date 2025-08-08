@@ -1056,3 +1056,771 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 2025-07-27 13:19:11,170 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
 2025-07-27 13:19:13,932 - INFO - app.py - 21 - app: Intent determined: delete_character
 2025-07-27 13:19:13,933 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'delete_character', 'fields': {'character_name': 'leeroy', 'character_tag': '1234', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'character_name': 'leeroy', 'character_tag': '1234'}}}}
+2025-07-27 13:20:35,320 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-27 13:21:43,634 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 13:21:44,123 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 13:21:45,702 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 13:21:48,417 - INFO - app.py - 21 - app: Intent determined: delete_character
+2025-07-27 13:21:48,417 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'character_name': 'leeroy', 'character_tag': '1234'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'delete_character', 'fields': {'character_name': 'leeroy', 'character_tag': '1234', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}}
+2025-07-27 13:22:39,551 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 16:29:39,918 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-27 16:29:47,012 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 16:29:47,528 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 16:29:49,060 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 16:57:03,251 - INFO - app.py - 21 - app: Intent determined: delete_character
+2025-07-27 16:57:03,251 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'character_name': 'leeroy'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'delete_character', 'fields': {'character_name': 'leeroy#1234', 'character_tag': '1234', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}}
+2025-07-27 16:57:21,562 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-27 16:59:22,310 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 16:59:22,898 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 16:59:24,412 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 500 Internal Server Error"
+2025-07-27 16:59:24,413 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: Server error '500 Internal Server Error' for url 'http://localhost:8001/MCPServer/available_tools'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-07-27 16:59:44,972 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 16:59:45,483 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 16:59:54,742 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 500 Internal Server Error"
+2025-07-27 16:59:54,744 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: Server error '500 Internal Server Error' for url 'http://localhost:8001/MCPServer/available_tools'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-07-27 17:00:04,243 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 17:00:04,678 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 17:00:16,068 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 17:00:34,884 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 17:00:35,313 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 17:00:46,766 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 17:01:59,845 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 17:02:00,279 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 17:02:11,733 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 17:22:42,322 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 17:22:42,755 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 17:22:54,140 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 17:23:23,431 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 17:23:23,857 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 17:23:25,382 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 17:24:15,027 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-27 17:24:17,248 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 17:24:17,740 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 17:24:19,179 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 17:24:19,181 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 'str' object has no attribute 'write'
+2025-07-27 17:24:30,602 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 17:24:31,089 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 17:24:32,639 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 17:24:46,710 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 'str' object has no attribute 'write'
+2025-07-27 17:25:55,757 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-07-27 17:26:06,803 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-27 17:26:11,770 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 17:26:12,262 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 17:26:19,406 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 17:26:19,408 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 'str' object has no attribute 'write'
+2025-07-27 17:26:26,812 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 17:26:27,239 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 17:26:28,632 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 17:26:36,977 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 'str' object has no attribute 'write'
+2025-07-27 17:27:20,027 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 17:27:20,456 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 17:27:23,534 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 17:27:29,326 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 'str' object has no attribute 'write'
+2025-07-27 17:28:34,447 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-07-27 17:28:45,237 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-27 17:29:01,382 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 17:29:01,862 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 17:29:05,144 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 17:31:39,548 - INFO - app.py - 21 - app: Intent determined: delete_character
+2025-07-27 17:31:39,548 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'character_name': 'leeroy', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'delete_character', 'fields': {'character_name': 'leeroy', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}}
+2025-07-27 17:31:40,505 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-27 17:31:40,507 - ERROR - app.py - 28 - app: Error in MCP workflow: No character found matching the criteria.
+2025-07-27 17:31:48,266 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 17:31:48,684 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 17:32:04,613 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 17:33:22,121 - INFO - app.py - 21 - app: Intent determined: delete_character
+2025-07-27 17:33:22,122 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'character_name': 'leeroy', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'delete_character', 'fields': {'character_name': 'leeroy', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}}
+2025-07-27 17:33:22,547 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-27 17:33:22,548 - ERROR - app.py - 28 - app: Error in MCP workflow: No character found matching the criteria.
+2025-07-27 17:33:30,302 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 17:33:30,732 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 17:33:37,343 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 17:34:35,198 - INFO - app.py - 21 - app: Intent determined: delete_character
+2025-07-27 17:34:35,199 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'character_name': 'leeroy', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'delete_character', 'fields': {'character_name': 'leeroy', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}}
+2025-07-27 17:34:35,632 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-27 17:34:35,634 - ERROR - app.py - 28 - app: Error in MCP workflow: No character found matching the criteria.
+2025-07-27 17:34:38,040 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 17:34:38,469 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 17:34:49,880 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 17:36:06,541 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 17:36:07,066 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 17:36:14,538 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 17:36:47,730 - INFO - app.py - 21 - app: Intent determined: delete_character
+2025-07-27 17:36:47,731 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'character_name': 'leeroy', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'delete_character', 'fields': {'character_name': 'leeroy', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}}
+2025-07-27 17:36:48,432 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/orchestrator "HTTP/1.1 200 OK"
+2025-07-27 17:36:48,433 - ERROR - app.py - 28 - app: Error in MCP workflow: No character found matching the criteria.
+2025-07-27 17:36:55,026 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 17:36:55,450 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 17:36:56,862 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 17:37:45,654 - INFO - app.py - 21 - app: Intent determined: delete_character
+2025-07-27 17:37:45,655 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'delete_character', 'fields': {'character_name': 'leeroy', 'character_tag': '1234', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}, 'task_2': {'agent': 'character', 'tool': {'name': 'get_character', 'fields': {'server_id': '123e4567-e89b-12d3-a456-426614174111', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'character_name': 'leeroy', 'character_tag': '1234'}}}}
+2025-07-27 17:37:51,089 - ERROR - app.py - 35 - app: Error occurred while getting MCP tools: 
+2025-07-27 17:38:01,383 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-27 17:38:01,811 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-27 17:38:06,124 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 200 OK"
+2025-07-27 19:37:04,482 - INFO - app.py - 21 - app: Intent determined: delete_character
+2025-07-27 19:37:04,485 - INFO - app.py - 22 - app: Tasks determined: {'task_1': {'agent': 'character', 'tool': {'name': 'delete_character', 'fields': {'character_name': 'leeroy', 'character_tag': '1234', 'user_id': '123e4567-e89b-12d3-a456-426614174000', 'server_id': '123e4567-e89b-12d3-a456-426614174111'}}}}
+2025-07-27 19:37:17,678 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-28 12:47:18,387 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-28 12:47:30,603 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-07-28 12:47:39,923 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-28 12:47:41,522 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-28 12:47:42,030 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-28 12:47:42,474 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/instructions "HTTP/1.1 404 Not Found"
+2025-07-28 12:47:42,476 - ERROR - app.py - 36 - app: Error occurred while getting MCP tools: Client error '404 Not Found' for url 'http://localhost:8001/MCPServer/instructions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2025-07-28 12:48:14,719 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-28 12:48:15,219 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-28 12:48:15,712 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/instructions "HTTP/1.1 404 Not Found"
+2025-07-28 12:48:15,713 - ERROR - app.py - 36 - app: Error occurred while getting MCP tools: Client error '404 Not Found' for url 'http://localhost:8001/MCPServer/instructions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2025-07-28 12:49:01,755 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-07-28 12:49:10,884 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-07-28 12:49:18,883 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-28 12:49:19,371 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-28 12:49:29,864 - ERROR - app.py - 36 - app: Error occurred while getting MCP tools: 
+2025-07-28 12:50:22,700 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-28 12:50:23,150 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-28 12:50:25,625 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/instructions "HTTP/1.1 200 OK"
+2025-07-28 12:50:57,537 - ERROR - llm_service.py - 62 - llm_service: Failed to parse LLM response as JSON: Expecting value: line 1 column 1 (char 0). Raw response: This is a good start to defining your intents. Here's a refined version with improvements for clarity, consistency, and functionality:
+
+
+```yaml
+intents:
+  # Character Management Intents
+  #____________________________
+
+  # Get Character Information
+  get_active_character:
+    tool: [get_character]
+    description: Retrieve the active character for a user.
+    agent: [character]
+    required_fields: [user_id, server_id]  # 'active' flag is implied
+    optional_fields: []
+
+  get_character_by_name:
+    tool: [get_character]
+    description: Retrieve a character by name and tag.
+    agent: [character]
+    required_fields: [character_name, character_tag, server_id]
+    optional_fields: []
+
+  get_character_by_id:  # Consider renaming for consistency
+    tool: [get_character]
+    description: Retrieve a character by ID.  (Consider if this is truly needed)
+    agent: [character]
+    required_fields: [character_id, server_id] # Using character_id is more standard
+    optional_fields: []
+
+
+  # Character Existence Check
+  check_character_exists:
+    tool: [character_exists] # Simpler tool name
+    description: Check if a character exists by name and tag, or by ID.
+    agent: [character]
+    required_fields: [server_id, character_name, character_tag] # Prioritize name/tag; ID is optional
+    optional_fields: [character_id] # ID can be used instead of name/tag
+
+  # Character Creation
+  create_character:
+    tool: [check_character_limit, check_character_name_available, create_character] #More descriptive tool names
+    description: Create a new character.
+    agent: [character]
+    required_fields: [user_id, server_id, character_name, character_class] #Improved field names
+    optional_fields: [character_tag, other_attributes...] # Allow additional attributes
+
+  # Character Deletion
+  delete_character:
+    tool: [get_character, delete_character]
+    description: Delete a character by name and tag.
+    agent: [character]
+    required_fields: [server_id, character_name, character_tag]
+    optional_fields: []
+
+  # Character Update
+  update_character:
+    tool: [get_character, update_character]
+    description: Update character details.
+    agent: [character]
+    required_fields: [server_id, character_id] #Using character ID is better for updates
+    optional_fields: [character_name, character_class, character_tag, other_attributes...]
+
+
+  # Utility Intents
+  #_________________
+  check_character_limit:
+    tool: [check_character_limit]
+    description: Check if the user has reached their character limit.
+    agent: [character]
+    required_fields: [user_id, server_id]
+    optional_fields: []
+
+  check_character_name_available: # Separated for better modularity
+    tool: [check_character_name_available]
+    description: Check if a character name and tag are available.
+    agent: [character]
+    required_fields: [server_id, character_name, character_tag]
+    optional_fields: []
+
+
+  # Error Handling Intent
+  #______________________
+  handle_missing_fields: #More descriptive name
+    tool: [handle_missing_fields] #More descriptive tool name
+    agent: [error]
+    required_fields: [] #Error handling doesn't require specific fields
+    optional_fields: [missing_fields] #Optional list of missing fields for better error messages
+
+```
+
+**Key Improvements:**
+
+* **Consistency:**  Field names are more consistent (e.g., `character_name` instead of `characters_name`).  Using `character_id` where appropriate is more efficient and standard.
+* **Clarity:** Intent descriptions are clearer and more concise.
+* **Modularity:**  The `check_character_name_available` intent is separated, making the `create_character` intent cleaner.
+* **Error Handling:** The error handling intent is improved with more descriptive naming and the ability to optionally include a list of missing fields for more informative error messages.
+* **Optional Fields:** Added `optional_fields` to allow for flexibility in data input.  This is especially useful for `update_character`.
+* **Efficiency:** Using `character_id` for `get_character_by_id` and `update_character` is generally more efficient than searching by name.
+
+
+Remember to adapt these changes to your specific needs and the capabilities of your tools.  This improved structure will make your intent definitions more robust and easier to maintain.
+2025-07-28 12:51:39,872 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 422 Unprocessable Content"
+2025-07-28 12:51:39,874 - ERROR - app.py - 36 - app: Error occurred while getting MCP tools: Client error '422 Unprocessable Content' for url 'http://localhost:8001/MCPServer/available_tools'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2025-07-28 12:51:48,916 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-28 12:51:49,432 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-28 12:51:49,888 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/instructions "HTTP/1.1 200 OK"
+2025-07-28 12:51:58,141 - ERROR - llm_service.py - 62 - llm_service: Failed to parse LLM response as JSON: Expecting value: line 1 column 1 (char 0). Raw response: This is a good start to defining your intents. Here's a refined version with improvements for clarity, consistency, and functionality:
+
+
+```yaml
+intents:
+  # Character Management Intents
+  #______________________________
+
+  # Get Character Information
+  get_active_character:
+    tool: [get_character]
+    description: Retrieve the user's active character.
+    agent: [character]
+    required_fields: [user_id, server_id]
+    optional_fields: [active] # Allow specifying active=false to get inactive character
+    default_values:
+      active: true
+
+  get_character_by_name:
+    tool: [get_character]
+    description: Retrieve a character by name and tag.
+    agent: [character]
+    required_fields: [character_name, character_tag, server_id]
+
+  get_character_by_id: # Consider renaming for consistency
+    tool: [get_character]
+    description: Retrieve a character by ID.  (Consider if ID is truly needed or if name/tag is sufficient)
+    agent: [character]
+    required_fields: [character_id, server_id] # Changed to character_id
+
+
+  # Character Existence Check
+  check_character_exists:
+    tool: [character_exists] # Simplified tool name
+    description: Check if a character exists by name and tag.  Falls back to user_id if name isn't provided.
+    agent: [character]
+    required_fields: [server_id]
+    optional_fields: [character_name, character_tag, user_id]
+
+
+  # Character Creation
+  create_character:
+    tool: [check_character_limit, check_character_name_availability, create_character] # More descriptive tool names
+    description: Create a new character.
+    agent: [character]
+    required_fields: [character_name, character_class, user_id, server_id]
+
+
+  # Character Deletion
+  delete_character:
+    tool: [get_character, delete_character]
+    description: Delete a character by name and tag.
+    agent: [character]
+    required_fields: [server_id, character_name, character_tag]
+
+
+  # Character Update
+  update_character:
+    tool: [get_character, update_character]
+    description: Update character details.
+    agent: [character]
+    required_fields: [server_id] # Server ID is essential for context
+    optional_fields: [character_name, character_tag, user_id,  # Allow update by ID or name/tag
+                      updated_fields: {}] #  Structure for updated fields (name, class, etc.)
+
+
+  # Helper Intents (These might be internal tools, not exposed as user intents)
+  #_________________________________________________________________________
+  check_character_limit:
+    tool: [check_character_limit]
+    description: Check if the user has reached the character limit.
+    agent: [character]
+    required_fields: [server_id, user_id]
+
+  check_character_name_availability:
+    tool: [check_character_name_availability]
+    description: Check if a character name and tag are available.
+    agent: [character]
+    required_fields: [server_id, character_name, character_tag]
+
+
+  # Error Handling Intent
+  #_______________________
+  missing_required_fields: # More descriptive name
+    tool: [handle_missing_fields] # More descriptive tool name
+    agent: [error]
+
+
+```
+
+**Key Improvements:**
+
+* **Consistent Naming:**  Intents and tools have more consistent and descriptive names (e.g., `get_character_by_name` instead of `view_character_by_name`).
+* **Improved Field Handling:** Uses `optional_fields` and `default_values` where appropriate to make intents more flexible.  This clarifies what fields are truly necessary versus optional.  The `update_character` intent now uses a structured approach for specifying updated fields.
+* **ID vs. Name/Tag:**  The design now clearly distinguishes between using character IDs and using character names/tags.  Consider if you truly need character IDs, as name/tag is often sufficient.
+* **Helper Intents:** Separates helper functions (like `check_character_limit`) from user-facing intents.  These are internal tools.
+* **Error Handling:** Improved error intent name for clarity.
+* **Simplified Tools:**  Combined similar tools where possible (e.g., `character_exists` combines the check).
+
+
+This revised structure is more organized, easier to understand, and will lead to a more robust and maintainable system. Remember to adjust based on your specific needs and database structure.  For instance, if you are using a database with auto-incrementing character IDs, you might not need to specify `character_id` during creation.  The system can generate it.
+2025-07-28 12:52:34,921 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 422 Unprocessable Content"
+2025-07-28 12:52:34,923 - ERROR - app.py - 36 - app: Error occurred while getting MCP tools: Client error '422 Unprocessable Content' for url 'http://localhost:8001/MCPServer/available_tools'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2025-07-28 12:52:37,186 - INFO - app.py - 14 - app: Executing request with MCP workflow...
+2025-07-28 12:52:37,615 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-07-28 12:52:38,038 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/instructions "HTTP/1.1 200 OK"
+2025-08-01 22:44:52,030 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-01 22:44:54,799 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-01 22:44:57,460 - ERROR - app.py - 41 - app: Error occurred while getting MCP tools: All connection attempts failed
+2025-08-01 22:45:09,127 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-08-01 22:45:17,770 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-01 22:46:27,515 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-01 22:46:30,027 - ERROR - app.py - 41 - app: Error occurred while getting MCP tools: All connection attempts failed
+2025-08-01 22:47:09,439 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-01 22:47:21,429 - ERROR - app.py - 41 - app: Error occurred while getting MCP tools: All connection attempts failed
+2025-08-01 22:47:47,532 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-01 22:47:49,991 - ERROR - app.py - 41 - app: Error occurred while getting MCP tools: All connection attempts failed
+2025-08-01 22:49:03,379 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-01 22:49:13,820 - ERROR - app.py - 41 - app: Error occurred while getting MCP tools: 
+2025-08-01 22:49:29,435 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-01 22:49:39,871 - ERROR - app.py - 41 - app: Error occurred while getting MCP tools: 
+2025-08-01 22:52:23,010 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-01 22:52:33,449 - ERROR - app.py - 41 - app: Error occurred while getting MCP tools: 
+2025-08-01 22:54:21,422 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-01 22:54:31,884 - ERROR - app.py - 41 - app: Error occurred while getting MCP tools: 
+2025-08-01 22:54:34,585 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-01 22:54:45,033 - ERROR - app.py - 41 - app: Error occurred while getting MCP tools: 
+2025-08-01 22:54:55,952 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-01 22:54:56,394 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-01 22:55:00,808 - INFO - app.py - 19 - app: Agent cards retrieved: {'agent_cards': [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]}
+2025-08-01 22:59:28,684 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-08-01 22:59:29,114 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/instructions "HTTP/1.1 404 Not Found"
+2025-08-01 22:59:29,115 - ERROR - app.py - 41 - app: Error occurred while getting MCP tools: Client error '404 Not Found' for url 'http://localhost:8001/MCPServer/instructions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2025-08-01 22:59:39,899 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-01 22:59:50,333 - ERROR - app.py - 41 - app: Error occurred while getting MCP tools: 
+2025-08-01 22:59:58,770 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-01 22:59:59,291 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-01 22:59:59,292 - INFO - app.py - 19 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-01 22:59:59,805 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-08-01 23:00:00,306 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/instructions "HTTP/1.1 404 Not Found"
+2025-08-01 23:00:00,307 - ERROR - app.py - 41 - app: Error occurred while getting MCP tools: Client error '404 Not Found' for url 'http://localhost:8001/MCPServer/instructions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2025-08-01 23:00:15,545 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-01 23:00:16,025 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-01 23:00:16,026 - INFO - app.py - 19 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-01 23:00:16,521 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-08-01 23:00:17,019 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/instructions "HTTP/1.1 404 Not Found"
+2025-08-01 23:00:17,032 - ERROR - app.py - 41 - app: Error occurred while getting MCP tools: Client error '404 Not Found' for url 'http://localhost:8001/MCPServer/instructions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2025-08-01 23:00:33,946 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-01 23:00:34,871 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-01 23:00:35,364 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-01 23:00:49,578 - INFO - app.py - 19 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-01 23:01:03,579 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-08-01 23:01:04,002 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/instructions "HTTP/1.1 404 Not Found"
+2025-08-01 23:01:04,004 - ERROR - app.py - 41 - app: Error occurred while getting MCP tools: Client error '404 Not Found' for url 'http://localhost:8001/MCPServer/instructions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2025-08-01 23:10:59,360 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-01 23:10:59,787 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-02 15:13:01,409 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-02 15:13:10,057 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-02 15:13:20,668 - ERROR - app.py - 42 - app: Error occurred while getting MCP tools: 
+2025-08-02 15:13:33,061 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-02 15:13:33,574 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-02 15:13:34,084 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/instructions "HTTP/1.1 404 Not Found"
+2025-08-02 15:13:34,085 - ERROR - app.py - 42 - app: Error occurred while getting MCP tools: Client error '404 Not Found' for url 'http://localhost:8001/MCPServer/instructions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2025-08-02 15:21:27,496 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-02 15:21:37,938 - ERROR - app.py - 42 - app: Error occurred while getting MCP tools: 
+2025-08-02 15:22:07,520 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-02 15:22:07,952 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-02 15:22:08,390 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/instructions "HTTP/1.1 404 Not Found"
+2025-08-02 15:22:08,391 - ERROR - app.py - 42 - app: Error occurred while getting MCP tools: Client error '404 Not Found' for url 'http://localhost:8001/MCPServer/instructions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2025-08-02 15:22:35,420 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-08-02 15:23:03,130 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-02 15:23:06,527 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-02 15:23:07,127 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-02 15:23:07,573 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 404 Not Found"
+2025-08-02 15:23:07,576 - ERROR - app.py - 42 - app: Error occurred while getting MCP tools: Client error '404 Not Found' for url 'http://localhost:8001/A2A/instructions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2025-08-02 15:23:54,143 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-02 15:24:04,593 - ERROR - app.py - 42 - app: Error occurred while getting MCP tools: 
+2025-08-02 15:24:06,132 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-02 15:24:09,163 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-02 15:24:09,660 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-02 15:25:21,518 - INFO - app.py - 20 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-02 15:25:38,064 - ERROR - app.py - 42 - app: Error occurred while getting MCP tools: handle_agent() missing 1 required positional argument: 'tools'
+2025-08-02 16:04:09,736 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-08-02 16:04:18,722 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-02 16:07:54,108 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-08-02 16:08:03,046 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-02 16:08:06,315 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-02 16:08:06,805 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-02 16:08:07,225 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-02 16:08:17,188 - INFO - app.py - 20 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-02 16:09:31,146 - ERROR - llm_service.py - 88 - llm_service: An unexpected error occurred in handle_LLM_request: 'str' object has no attribute 'get'
+2025-08-02 16:16:26,622 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-08-02 16:16:31,568 - ERROR - llm_service.py - 88 - llm_service: An unexpected error occurred in handle_LLM_request: 'NoneType' object has no attribute 'get'
+2025-08-02 16:16:31,997 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 422 Unprocessable Content"
+2025-08-02 16:16:31,998 - ERROR - app.py - 42 - app: Error occurred while getting MCP tools: Client error '422 Unprocessable Content' for url 'http://localhost:8001/MCPServer/available_tools'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2025-08-02 16:16:32,069 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-08-02 16:16:41,088 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-02 16:25:41,445 - INFO - app.py - 15 - app: Executing request with MCP workflow...
+2025-08-02 16:25:42,048 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-02 16:25:42,554 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-02 16:25:42,555 - INFO - app.py - 20 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-02 16:26:23,360 - ERROR - llm_service.py - 58 - llm_service: Failed to parse LLM response as JSON: Expecting value: line 1 column 1 (char 0). Raw response: The provided agent cards do not contain an agent capable of deleting characters.  Therefore, no agent from the list can fulfill the request.
+2025-08-02 17:41:28,975 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-08-02 17:41:29,871 - ERROR - llm_service.py - 21 - llm_service: No user query provided in the request.
+2025-08-02 17:41:30,314 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 422 Unprocessable Content"
+2025-08-02 17:41:30,316 - ERROR - app.py - 42 - app: Error occurred while getting MCP tools: Client error '422 Unprocessable Content' for url 'http://localhost:8001/MCPServer/available_tools'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2025-08-02 17:41:30,373 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-08-02 17:42:33,837 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-02 17:42:35,949 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-02 17:42:36,440 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-02 17:43:43,847 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-02 17:43:43,848 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-02 17:43:45,154 - ERROR - llm_service.py - 58 - llm_service: Failed to parse LLM response as JSON: Expecting value: line 1 column 1 (char 0). Raw response: The provided agent cards do not contain an agent capable of deleting characters.  Therefore, no agent is suitable to fulfill this request.
+2025-08-02 17:43:46,959 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-08-02 17:43:46,961 - ERROR - llm_service.py - 21 - llm_service: No user query provided in the request.
+2025-08-02 17:43:47,397 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/MCPServer/available_tools "HTTP/1.1 422 Unprocessable Content"
+2025-08-02 17:43:47,399 - ERROR - app.py - 44 - app: Error occurred while getting MCP tools: Client error '422 Unprocessable Content' for url 'http://localhost:8001/MCPServer/available_tools'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2025-08-02 17:44:02,077 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-08-02 17:44:13,331 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-02 17:44:18,712 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-02 17:44:19,198 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-02 17:44:36,555 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: cannot access local variable 'intents' where it is not associated with a value
+2025-08-02 17:45:19,333 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-08-02 17:45:28,311 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-02 17:45:29,994 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-02 17:45:30,483 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 18:13:24,140 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-04 18:13:31,947 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 18:13:42,545 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 18:13:51,241 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 18:13:51,670 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 18:13:52,106 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-04 18:13:52,107 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-04 18:13:52,271 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: AsyncClient.get() got an unexpected keyword argument 'json'
+2025-08-04 18:14:13,198 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 18:14:13,642 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 18:14:14,081 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-04 18:14:14,082 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-04 18:18:29,575 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: AsyncClient.get() got an unexpected keyword argument 'json'
+2025-08-04 18:18:29,684 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-08-04 18:18:34,801 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-04 18:18:50,316 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 18:18:50,806 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 18:18:51,242 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-04 18:18:51,243 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-04 18:18:53,847 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: AsyncClient.get() got an unexpected keyword argument 'json'
+2025-08-04 18:19:41,111 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-08-04 18:19:46,038 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-04 18:19:48,709 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 18:19:49,201 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 18:19:49,635 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-04 18:19:49,636 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-04 18:19:51,818 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/LLM/agents_to_use?request=I+want+to+delete+my+character%2C+leeroy%231234&agent_cards=%7B%27additional_interfaces%27%3A+None%2C+%27capabilities%27%3A+%7B%27extensions%27%3A+None%2C+%27push_notifications%27%3A+True%2C+%27state_transition_history%27%3A+None%2C+%27streaming%27%3A+True%7D%2C+%27default_input_modes%27%3A+%5B%27text%27%2C+%27text%2Fplain%27%5D%2C+%27default_output_modes%27%3A+%5B%27text%27%2C+%27text%2Fplain%27%5D%2C+%27description%27%3A+%27An+agent+that+interacts+with+characters.%27%2C+%27documentation_url%27%3A+None%2C+%27icon_url%27%3A+None%2C+%27name%27%3A+%27Character+Management+Agent%27%2C+%27preferred_transport%27%3A+None%2C+%27protocol_version%27%3A+%270.2.6%27%2C+%27provider%27%3A+None%2C+%27security%27%3A+None%2C+%27security_schemes%27%3A+None%2C+%27skills%27%3A+%5B%7B%27description%27%3A+%27Creates+a+new+character.%27%2C+%27examples%27%3A+%5B%27Create+a+character+named+Gandalf%2C+a+wizard.%27%2C+%27make+a+character+with+blue+hair+named+leeroy%27%5D%2C+%27id%27%3A+%27create_character%27%2C+%27input_modes%27%3A+None%2C+%27name%27%3A+%27Create+Character%27%2C+%27output_modes%27%3A+None%2C+%27tags%27%3A+%5B%27creation%27%2C+%27make%27%2C+%27create%27%2C+%27customize%27%5D%7D%2C+%7B%27description%27%3A+%27Views+an+existing+character.%27%2C+%27examples%27%3A+%5B%27View+the+character+named+Gandalf.%27%2C+%27show+me+the+character+with+blue+hair+named+leeroy.%27%5D%2C+%27id%27%3A+%27view_character%27%2C+%27input_modes%27%3A+None%2C+%27name%27%3A+%27View+Character%27%2C+%27output_modes%27%3A+None%2C+%27tags%27%3A+%5B%27view%27%2C+%27retrieve%27%2C+%27character%27%5D%7D%5D%2C+%27supports_authenticated_extended_card%27%3A+None%2C+%27url%27%3A+%27http%3A%2F%2Flocalhost%3A8001%2FAgent%2Fcharacter_agent%27%2C+%27version%27%3A+%271.0.0%27%7D "HTTP/1.1 422 Unprocessable Content"
+2025-08-04 18:19:51,820 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: Client error '422 Unprocessable Content' for url 'http://localhost:8001/LLM/agents_to_use?request=I+want+to+delete+my+character%2C+leeroy%231234&agent_cards=%7B%27additional_interfaces%27%3A+None%2C+%27capabilities%27%3A+%7B%27extensions%27%3A+None%2C+%27push_notifications%27%3A+True%2C+%27state_transition_history%27%3A+None%2C+%27streaming%27%3A+True%7D%2C+%27default_input_modes%27%3A+%5B%27text%27%2C+%27text%2Fplain%27%5D%2C+%27default_output_modes%27%3A+%5B%27text%27%2C+%27text%2Fplain%27%5D%2C+%27description%27%3A+%27An+agent+that+interacts+with+characters.%27%2C+%27documentation_url%27%3A+None%2C+%27icon_url%27%3A+None%2C+%27name%27%3A+%27Character+Management+Agent%27%2C+%27preferred_transport%27%3A+None%2C+%27protocol_version%27%3A+%270.2.6%27%2C+%27provider%27%3A+None%2C+%27security%27%3A+None%2C+%27security_schemes%27%3A+None%2C+%27skills%27%3A+%5B%7B%27description%27%3A+%27Creates+a+new+character.%27%2C+%27examples%27%3A+%5B%27Create+a+character+named+Gandalf%2C+a+wizard.%27%2C+%27make+a+character+with+blue+hair+named+leeroy%27%5D%2C+%27id%27%3A+%27create_character%27%2C+%27input_modes%27%3A+None%2C+%27name%27%3A+%27Create+Character%27%2C+%27output_modes%27%3A+None%2C+%27tags%27%3A+%5B%27creation%27%2C+%27make%27%2C+%27create%27%2C+%27customize%27%5D%7D%2C+%7B%27description%27%3A+%27Views+an+existing+character.%27%2C+%27examples%27%3A+%5B%27View+the+character+named+Gandalf.%27%2C+%27show+me+the+character+with+blue+hair+named+leeroy.%27%5D%2C+%27id%27%3A+%27view_character%27%2C+%27input_modes%27%3A+None%2C+%27name%27%3A+%27View+Character%27%2C+%27output_modes%27%3A+None%2C+%27tags%27%3A+%5B%27view%27%2C+%27retrieve%27%2C+%27character%27%5D%7D%5D%2C+%27supports_authenticated_extended_card%27%3A+None%2C+%27url%27%3A+%27http%3A%2F%2Flocalhost%3A8001%2FAgent%2Fcharacter_agent%27%2C+%27version%27%3A+%271.0.0%27%7D'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2025-08-04 18:20:01,739 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 18:20:02,179 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 18:20:02,614 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-04 18:20:02,615 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-04 18:20:32,363 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/LLM/agents_to_use?request=I+want+to+delete+my+character%2C+leeroy%231234&agent_cards=%7B%27additional_interfaces%27%3A+None%2C+%27capabilities%27%3A+%7B%27extensions%27%3A+None%2C+%27push_notifications%27%3A+True%2C+%27state_transition_history%27%3A+None%2C+%27streaming%27%3A+True%7D%2C+%27default_input_modes%27%3A+%5B%27text%27%2C+%27text%2Fplain%27%5D%2C+%27default_output_modes%27%3A+%5B%27text%27%2C+%27text%2Fplain%27%5D%2C+%27description%27%3A+%27An+agent+that+interacts+with+characters.%27%2C+%27documentation_url%27%3A+None%2C+%27icon_url%27%3A+None%2C+%27name%27%3A+%27Character+Management+Agent%27%2C+%27preferred_transport%27%3A+None%2C+%27protocol_version%27%3A+%270.2.6%27%2C+%27provider%27%3A+None%2C+%27security%27%3A+None%2C+%27security_schemes%27%3A+None%2C+%27skills%27%3A+%5B%7B%27description%27%3A+%27Creates+a+new+character.%27%2C+%27examples%27%3A+%5B%27Create+a+character+named+Gandalf%2C+a+wizard.%27%2C+%27make+a+character+with+blue+hair+named+leeroy%27%5D%2C+%27id%27%3A+%27create_character%27%2C+%27input_modes%27%3A+None%2C+%27name%27%3A+%27Create+Character%27%2C+%27output_modes%27%3A+None%2C+%27tags%27%3A+%5B%27creation%27%2C+%27make%27%2C+%27create%27%2C+%27customize%27%5D%7D%2C+%7B%27description%27%3A+%27Views+an+existing+character.%27%2C+%27examples%27%3A+%5B%27View+the+character+named+Gandalf.%27%2C+%27show+me+the+character+with+blue+hair+named+leeroy.%27%5D%2C+%27id%27%3A+%27view_character%27%2C+%27input_modes%27%3A+None%2C+%27name%27%3A+%27View+Character%27%2C+%27output_modes%27%3A+None%2C+%27tags%27%3A+%5B%27view%27%2C+%27retrieve%27%2C+%27character%27%5D%7D%5D%2C+%27supports_authenticated_extended_card%27%3A+None%2C+%27url%27%3A+%27http%3A%2F%2Flocalhost%3A8001%2FAgent%2Fcharacter_agent%27%2C+%27version%27%3A+%271.0.0%27%7D "HTTP/1.1 422 Unprocessable Content"
+2025-08-04 18:24:01,054 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: Client error '422 Unprocessable Content' for url 'http://localhost:8001/LLM/agents_to_use?request=I+want+to+delete+my+character%2C+leeroy%231234&agent_cards=%7B%27additional_interfaces%27%3A+None%2C+%27capabilities%27%3A+%7B%27extensions%27%3A+None%2C+%27push_notifications%27%3A+True%2C+%27state_transition_history%27%3A+None%2C+%27streaming%27%3A+True%7D%2C+%27default_input_modes%27%3A+%5B%27text%27%2C+%27text%2Fplain%27%5D%2C+%27default_output_modes%27%3A+%5B%27text%27%2C+%27text%2Fplain%27%5D%2C+%27description%27%3A+%27An+agent+that+interacts+with+characters.%27%2C+%27documentation_url%27%3A+None%2C+%27icon_url%27%3A+None%2C+%27name%27%3A+%27Character+Management+Agent%27%2C+%27preferred_transport%27%3A+None%2C+%27protocol_version%27%3A+%270.2.6%27%2C+%27provider%27%3A+None%2C+%27security%27%3A+None%2C+%27security_schemes%27%3A+None%2C+%27skills%27%3A+%5B%7B%27description%27%3A+%27Creates+a+new+character.%27%2C+%27examples%27%3A+%5B%27Create+a+character+named+Gandalf%2C+a+wizard.%27%2C+%27make+a+character+with+blue+hair+named+leeroy%27%5D%2C+%27id%27%3A+%27create_character%27%2C+%27input_modes%27%3A+None%2C+%27name%27%3A+%27Create+Character%27%2C+%27output_modes%27%3A+None%2C+%27tags%27%3A+%5B%27creation%27%2C+%27make%27%2C+%27create%27%2C+%27customize%27%5D%7D%2C+%7B%27description%27%3A+%27Views+an+existing+character.%27%2C+%27examples%27%3A+%5B%27View+the+character+named+Gandalf.%27%2C+%27show+me+the+character+with+blue+hair+named+leeroy.%27%5D%2C+%27id%27%3A+%27view_character%27%2C+%27input_modes%27%3A+None%2C+%27name%27%3A+%27View+Character%27%2C+%27output_modes%27%3A+None%2C+%27tags%27%3A+%5B%27view%27%2C+%27retrieve%27%2C+%27character%27%5D%7D%5D%2C+%27supports_authenticated_extended_card%27%3A+None%2C+%27url%27%3A+%27http%3A%2F%2Flocalhost%3A8001%2FAgent%2Fcharacter_agent%27%2C+%27version%27%3A+%271.0.0%27%7D'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2025-08-04 18:24:01,164 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-08-04 18:24:06,144 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-04 18:24:08,154 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 18:24:18,654 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 18:24:20,763 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 18:24:21,192 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 18:24:21,624 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-04 18:24:21,625 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-04 18:24:22,062 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/LLM/agents_to_use "HTTP/1.1 422 Unprocessable Content"
+2025-08-04 18:24:22,064 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: Client error '422 Unprocessable Content' for url 'http://localhost:8001/LLM/agents_to_use'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2025-08-04 20:06:22,457 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 20:06:22,971 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 20:06:23,474 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-04 20:06:23,476 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-04 20:06:23,958 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/LLM/agents_to_use "HTTP/1.1 422 Unprocessable Content"
+2025-08-04 20:06:23,960 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: Client error '422 Unprocessable Content' for url 'http://localhost:8001/LLM/agents_to_use'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422
+2025-08-04 20:08:44,107 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 20:08:44,544 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 20:08:44,991 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-04 20:08:44,992 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-04 20:09:32,098 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 20:10:00,053 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 20:10:08,889 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 20:10:10,511 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 20:10:14,072 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 20:10:14,579 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-04 20:10:14,581 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-04 20:10:31,828 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 21:24:19,253 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 21:24:29,705 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 21:24:30,605 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 21:24:34,255 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 21:24:34,752 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-04 21:24:34,754 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-04 21:24:37,517 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/LLM/agents_to_use "HTTP/1.1 500 Internal Server Error"
+2025-08-04 21:24:37,519 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: Server error '500 Internal Server Error' for url 'http://localhost:8001/LLM/agents_to_use'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-04 21:25:27,725 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 21:25:38,215 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 21:25:44,294 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 21:25:44,806 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 21:25:45,320 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-04 21:25:45,322 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-04 21:25:48,050 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/LLM/agents_to_use "HTTP/1.1 500 Internal Server Error"
+2025-08-04 21:25:48,051 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: Server error '500 Internal Server Error' for url 'http://localhost:8001/LLM/agents_to_use'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-04 21:25:52,761 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 21:25:53,189 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 21:25:53,638 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-04 21:25:53,639 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-04 21:26:04,072 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 21:27:08,316 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 21:27:18,751 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 21:27:26,462 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 21:27:26,888 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 21:27:27,324 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-04 21:27:27,325 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-04 21:27:37,773 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 21:30:18,152 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 21:30:28,585 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 21:30:33,899 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 21:30:34,547 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 21:30:35,069 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-04 21:30:35,071 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-04 21:30:45,520 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 21:32:54,650 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 21:33:05,076 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 21:33:29,979 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 21:33:37,285 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 21:33:37,720 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-04 21:33:37,721 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-04 21:33:48,154 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 21:36:35,657 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 21:36:46,166 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 21:36:48,333 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 21:36:52,237 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 21:36:52,731 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-04 21:36:52,732 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-04 21:37:03,252 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 21:57:52,387 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 21:58:02,837 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 21:58:06,450 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 21:58:07,714 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 21:58:08,221 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-04 21:58:08,222 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-04 21:58:18,697 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 21:59:41,696 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 21:59:52,130 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 21:59:55,050 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 21:59:57,231 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 21:59:57,721 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-04 21:59:57,722 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-04 22:00:08,248 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 22:04:00,307 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 22:04:10,747 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 22:04:22,460 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 22:04:22,969 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 22:04:23,452 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-04 22:04:23,453 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-04 22:04:30,922 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/LLM/agents_to_use "HTTP/1.1 200 OK"
+2025-08-04 22:04:49,787 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-08-04 22:04:57,586 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 22:04:58,008 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 22:04:58,445 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-04 22:04:58,446 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-04 22:05:08,879 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 22:05:46,480 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 22:05:46,910 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 22:05:47,347 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-04 22:05:47,348 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-04 22:05:55,838 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/LLM/agents_to_use "HTTP/1.1 200 OK"
+2025-08-04 22:06:33,147 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-08-04 22:06:38,054 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 22:06:48,499 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 22:06:49,356 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 22:06:53,941 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 22:06:54,462 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-04 22:06:54,463 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-04 22:07:04,961 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 22:07:52,345 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 22:08:02,794 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 22:08:09,252 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 22:08:09,748 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 22:08:10,198 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 500 Internal Server Error"
+2025-08-04 22:08:10,199 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: Server error '500 Internal Server Error' for url 'http://localhost:8001/A2A/instructions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-04 22:08:46,120 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 22:08:56,572 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 22:09:00,456 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 22:09:01,706 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 22:09:02,165 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 500 Internal Server Error"
+2025-08-04 22:09:02,166 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: Server error '500 Internal Server Error' for url 'http://localhost:8001/A2A/instructions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-04 22:10:07,073 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 22:10:17,512 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-04 22:10:21,334 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-04 22:10:22,790 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-04 22:10:23,299 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-04 22:10:23,300 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-04 22:10:33,812 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-05 12:32:51,014 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-05 12:35:26,413 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-05 12:35:37,017 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-05 12:35:45,404 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-05 12:35:45,913 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-05 12:35:46,412 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-05 12:35:46,413 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-05 12:35:50,659 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/LLM/agents_to_use "HTTP/1.1 200 OK"
+2025-08-05 12:42:01,475 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-08-05 12:42:08,496 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-05 12:42:09,003 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-05 12:42:09,517 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-05 12:42:09,518 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Management Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-05 12:42:20,010 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-05 12:43:38,180 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-05 12:43:48,614 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-05 12:46:20,150 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-05 12:46:20,656 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-05 12:46:21,142 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-05 12:46:21,143 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-05 12:46:31,663 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-05 12:46:42,697 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-05 12:46:53,180 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-05 12:47:41,996 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-05 12:47:42,504 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-05 12:47:43,001 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-05 12:47:43,002 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-05 12:47:53,504 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-05 12:48:14,574 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-05 12:48:15,012 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-05 12:51:26,762 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-05 12:51:26,764 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}]
+2025-08-05 12:51:30,726 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/LLM/agents_to_use "HTTP/1.1 200 OK"
+2025-08-05 12:51:31,161 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-08-05 12:51:41,542 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-05 12:51:47,818 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-05 12:51:48,247 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-05 12:51:48,248 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}, {'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': "An agent that interacts with a player's inventory.", 'documentation_url': None, 'icon_url': None, 'name': 'Inventory Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Adds a new item to the inventory.', 'examples': ['Add a sword.', 'put a health potion in the inventory.'], 'id': 'add_item', 'input_modes': None, 'name': 'Add Item', 'output_modes': None, 'tags': ['add', 'insert', 'item', 'customize']}, {'description': 'Views the current inventory.', 'examples': ['View the inventory.', 'show me the items in the inventory.'], 'id': 'view_inventory', 'input_modes': None, 'name': 'View Inventory', 'output_modes': None, 'tags': ['view', 'retrieve', 'inventory']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/inventory_agent', 'version': '1.0.0'}]
+2025-08-05 12:51:49,249 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/LLM/agents_to_use "HTTP/1.1 200 OK"
+2025-08-05 12:51:49,678 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-08-05 12:51:53,487 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-05 12:51:53,915 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-05 12:51:54,349 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-05 12:51:54,349 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}, {'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': "An agent that interacts with a player's inventory.", 'documentation_url': None, 'icon_url': None, 'name': 'Inventory Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Adds a new item to the inventory.', 'examples': ['Add a sword.', 'put a health potion in the inventory.'], 'id': 'add_item', 'input_modes': None, 'name': 'Add Item', 'output_modes': None, 'tags': ['add', 'insert', 'item', 'customize']}, {'description': 'Views the current inventory.', 'examples': ['View the inventory.', 'show me the items in the inventory.'], 'id': 'view_inventory', 'input_modes': None, 'name': 'View Inventory', 'output_modes': None, 'tags': ['view', 'retrieve', 'inventory']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/inventory_agent', 'version': '1.0.0'}]
+2025-08-05 12:51:55,196 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/LLM/agents_to_use "HTTP/1.1 200 OK"
+2025-08-05 12:51:55,638 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/MCPServer/available_intents "HTTP/1.1 200 OK"
+2025-08-05 12:52:08,165 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-05 12:52:24,846 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-08-05 12:52:29,960 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-05 12:52:32,902 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-05 12:52:43,409 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-05 12:52:47,889 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-05 12:52:48,698 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-05 12:52:58,610 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-05 12:52:58,611 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}, {'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': "An agent that interacts with a player's inventory.", 'documentation_url': None, 'icon_url': None, 'name': 'Inventory Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Adds a new item to the inventory.', 'examples': ['Add a sword.', 'put a health potion in the inventory.'], 'id': 'add_item', 'input_modes': None, 'name': 'Add Item', 'output_modes': None, 'tags': ['add', 'insert', 'item', 'customize']}, {'description': 'Views the current inventory.', 'examples': ['View the inventory.', 'show me the items in the inventory.'], 'id': 'view_inventory', 'input_modes': None, 'name': 'View Inventory', 'output_modes': None, 'tags': ['view', 'retrieve', 'inventory']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/inventory_agent', 'version': '1.0.0'}]
+2025-08-05 12:53:09,063 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-05 12:53:48,747 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-05 12:53:49,237 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-05 12:53:49,700 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-05 12:53:49,701 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}, {'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': "An agent that interacts with a player's inventory.", 'documentation_url': None, 'icon_url': None, 'name': 'Inventory Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Adds a new item to the inventory.', 'examples': ['Add a sword.', 'put a health potion in the inventory.'], 'id': 'add_item', 'input_modes': None, 'name': 'Add Item', 'output_modes': None, 'tags': ['add', 'insert', 'item', 'customize']}, {'description': 'Views the current inventory.', 'examples': ['View the inventory.', 'show me the items in the inventory.'], 'id': 'view_inventory', 'input_modes': None, 'name': 'View Inventory', 'output_modes': None, 'tags': ['view', 'retrieve', 'inventory']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/inventory_agent', 'version': '1.0.0'}]
+2025-08-05 12:54:00,216 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-05 23:14:06,593 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-05 23:14:59,500 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-05 23:15:10,092 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-05 23:15:16,782 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-05 23:15:17,213 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-05 23:15:17,656 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-05 23:15:17,657 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}, {'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': "An agent that interacts with a player's inventory.", 'documentation_url': None, 'icon_url': None, 'name': 'Inventory Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Adds a new item to the inventory.', 'examples': ['Add a sword.', 'put a health potion in the inventory.'], 'id': 'add_item', 'input_modes': None, 'name': 'Add Item', 'output_modes': None, 'tags': ['add', 'insert', 'item', 'customize']}, {'description': 'Views the current inventory.', 'examples': ['View the inventory.', 'show me the items in the inventory.'], 'id': 'view_inventory', 'input_modes': None, 'name': 'View Inventory', 'output_modes': None, 'tags': ['view', 'retrieve', 'inventory']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/inventory_agent', 'version': '1.0.0'}]
+2025-08-05 23:15:28,096 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-05 23:15:54,306 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-05 23:15:54,752 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-05 23:15:55,176 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-05 23:15:55,177 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}, {'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': "An agent that interacts with a player's inventory.", 'documentation_url': None, 'icon_url': None, 'name': 'Inventory Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Adds a new item to the inventory.', 'examples': ['Add a sword.', 'put a health potion in the inventory.'], 'id': 'add_item', 'input_modes': None, 'name': 'Add Item', 'output_modes': None, 'tags': ['add', 'insert', 'item', 'customize']}, {'description': 'Views the current inventory.', 'examples': ['View the inventory.', 'show me the items in the inventory.'], 'id': 'view_inventory', 'input_modes': None, 'name': 'View Inventory', 'output_modes': None, 'tags': ['view', 'retrieve', 'inventory']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/inventory_agent', 'version': '1.0.0'}]
+2025-08-05 23:16:05,623 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-07 16:56:42,207 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-07 16:56:59,137 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-07 16:57:09,653 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-07 16:57:15,002 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-07 16:57:15,442 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-07 16:57:31,918 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 500 Internal Server Error"
+2025-08-07 16:58:19,366 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: Server error '500 Internal Server Error' for url 'http://localhost:8001/A2A/instructions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-07 16:58:23,901 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-07 16:58:34,334 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-07 16:58:38,500 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-07 16:58:39,791 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-07 16:58:42,779 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-07 16:59:08,075 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}, {'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': "An agent that interacts with a player's inventory.", 'documentation_url': None, 'icon_url': None, 'name': 'Inventory Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Adds a new item to the inventory.', 'examples': ['Add a sword.', 'put a health potion in the inventory.'], 'id': 'add_item', 'input_modes': None, 'name': 'Add Item', 'output_modes': None, 'tags': ['add', 'insert', 'item', 'customize']}, {'description': 'Views the current inventory.', 'examples': ['View the inventory.', 'show me the items in the inventory.'], 'id': 'view_inventory', 'input_modes': None, 'name': 'View Inventory', 'output_modes': None, 'tags': ['view', 'retrieve', 'inventory']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/inventory_agent', 'version': '1.0.0'}]
+2025-08-07 16:59:18,782 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/LLM/agents_to_use "HTTP/1.1 500 Internal Server Error"
+2025-08-07 16:59:18,783 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: Server error '500 Internal Server Error' for url 'http://localhost:8001/LLM/agents_to_use'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-07 17:33:19,844 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-08-07 17:33:24,845 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-07 17:33:48,586 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-08-07 17:33:53,525 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-07 17:34:21,649 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-08-07 17:34:26,478 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-07 17:34:51,106 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-08-07 17:34:56,057 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-07 17:34:56,117 - INFO - api_server.py - 24 - api_server: Application shutdown...
+2025-08-07 17:35:00,929 - INFO - api_server.py - 19 - api_server: Application startup...
+2025-08-07 17:35:44,435 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-07 17:35:54,956 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-07 17:36:01,028 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-07 17:36:01,557 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-07 17:36:02,009 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-07 17:36:02,011 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}, {'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': "An agent that interacts with a player's inventory.", 'documentation_url': None, 'icon_url': None, 'name': 'Inventory Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Adds a new item to the inventory.', 'examples': ['Add a sword.', 'put a health potion in the inventory.'], 'id': 'add_item', 'input_modes': None, 'name': 'Add Item', 'output_modes': None, 'tags': ['add', 'insert', 'item', 'customize']}, {'description': 'Views the current inventory.', 'examples': ['View the inventory.', 'show me the items in the inventory.'], 'id': 'view_inventory', 'input_modes': None, 'name': 'View Inventory', 'output_modes': None, 'tags': ['view', 'retrieve', 'inventory']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/inventory_agent', 'version': '1.0.0'}]
+2025-08-07 17:36:05,508 - INFO - _client.py - 1740 - _client: HTTP Request: POST http://localhost:8001/LLM/agents_to_use "HTTP/1.1 500 Internal Server Error"
+2025-08-07 17:36:05,510 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: Server error '500 Internal Server Error' for url 'http://localhost:8001/LLM/agents_to_use'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2025-08-07 17:36:42,217 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-07 17:36:52,641 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
+2025-08-07 17:36:57,520 - INFO - app.py - 16 - app: Executing request with MCP workflow...
+2025-08-07 17:36:58,073 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/agent.json "HTTP/1.1 200 OK"
+2025-08-07 17:36:58,595 - INFO - _client.py - 1740 - _client: HTTP Request: GET http://localhost:8001/A2A/instructions "HTTP/1.1 200 OK"
+2025-08-07 17:36:58,596 - INFO - app.py - 22 - app: Agent cards retrieved: [{'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': 'An agent that interacts with characters.', 'documentation_url': None, 'icon_url': None, 'name': 'Character', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Creates a new character.', 'examples': ['Create a character named Gandalf, a wizard.', 'make a character with blue hair named leeroy'], 'id': 'create_character', 'input_modes': None, 'name': 'Create Character', 'output_modes': None, 'tags': ['creation', 'make', 'create', 'customize']}, {'description': 'Views an existing character.', 'examples': ['View the character named Gandalf.', 'show me the character with blue hair named leeroy.'], 'id': 'view_character', 'input_modes': None, 'name': 'View Character', 'output_modes': None, 'tags': ['view', 'retrieve', 'character']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/character_agent', 'version': '1.0.0'}, {'additional_interfaces': None, 'capabilities': {'extensions': None, 'push_notifications': True, 'state_transition_history': None, 'streaming': True}, 'default_input_modes': ['text', 'text/plain'], 'default_output_modes': ['text', 'text/plain'], 'description': "An agent that interacts with a player's inventory.", 'documentation_url': None, 'icon_url': None, 'name': 'Inventory Agent', 'preferred_transport': None, 'protocol_version': '0.2.6', 'provider': None, 'security': None, 'security_schemes': None, 'skills': [{'description': 'Adds a new item to the inventory.', 'examples': ['Add a sword.', 'put a health potion in the inventory.'], 'id': 'add_item', 'input_modes': None, 'name': 'Add Item', 'output_modes': None, 'tags': ['add', 'insert', 'item', 'customize']}, {'description': 'Views the current inventory.', 'examples': ['View the inventory.', 'show me the items in the inventory.'], 'id': 'view_inventory', 'input_modes': None, 'name': 'View Inventory', 'output_modes': None, 'tags': ['view', 'retrieve', 'inventory']}], 'supports_authenticated_extended_card': None, 'url': 'http://localhost:8001/Agent/inventory_agent', 'version': '1.0.0'}]
+2025-08-07 17:37:09,066 - ERROR - app.py - 45 - app: Error occurred while getting MCP tools: 
