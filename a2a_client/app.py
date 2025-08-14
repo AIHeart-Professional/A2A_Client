@@ -1,6 +1,6 @@
 from .mcp_server import get_available_tools, get_available_intents
 from .orchestrator import handle_orchestrator
-from .A2A_Server import get_agent_cards_endpoint, get_instructions_endpoint
+from .A2A_Server import get_agent_cards_endpoint, get_instructions_endpoint, handle_request
 from .llm import get_agents_to_use_endpoint
 from .utils import get_card_descriptions
 from cache.cache import cache
@@ -21,9 +21,10 @@ async def execute_request(request: dict) -> dict:
         instructions = await get_instructions_endpoint()
         logger.info("Agent cards retrieved: %s", agent_cards)
         agents = await get_agents_to_use_endpoint(request, agent_cards)
+        results = await handle_request(request, agent_cards, agents)
 
         #______________________
-        get_intents = await get_available_intents()
+       # get_intents = await get_available_intents()
 #        intents = await handle_intent(request, get_intents, instructions.get("intent"))
 #        get_tools = await get_available_tools(intents.get("agents"), intents.get("tools"))
     # Step 1: Call the intent handler to determine the intent based on the available tools and user request
@@ -45,4 +46,4 @@ async def execute_request(request: dict) -> dict:
         logger.error("Error occurred while getting MCP tools: %s", e)
         return {"error": "Failed to retrieve MCP tools."}
 
-    return "response"
+    return results.get("response")
