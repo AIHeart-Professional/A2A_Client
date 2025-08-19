@@ -2,6 +2,11 @@ import httpx
 import json
 import requests
 from typing import Dict, Any
+from config.logging_config import setup_logging
+import logging
+
+setup_logging()
+logger = logging.getLogger(__name__)
 
 async def get_agent_cards_endpoint() -> str:
     """
@@ -39,7 +44,7 @@ async def handle_request(request: dict, agent_cards: list, agents: dict) -> dict
         dict: The result of the request handling as returned by the MCP Server.
     """
     TEST_MCP_SERVER_API = "http://localhost:8001/A2A/handle_request_stream"  # Update with actual request API endpoint
-    async with httpx.AsyncClient(timeout=10.0) as client:
+    async with httpx.AsyncClient(timeout=30.0) as client:
         async with client.stream('POST', TEST_MCP_SERVER_API, json={
             "request": request, "agent_card": agent_cards, "agents": agents
         }) as response:
@@ -50,9 +55,9 @@ async def handle_request(request: dict, agent_cards: list, agents: dict) -> dict
                 if line.startswith('data: '):
                     event_data = json.loads(line[6:])  # Remove 'data: ' prefix
                     if event_data['type'] == 'agent_event':
-                        print(f"🤖 Agent: {event_data['content']}")
+                        logger.info(f"🤖 Agent: {event_data['content']}")
                     elif event_data['type'] == 'complete':
-                        print("✅ Processing complete!")
+                        logger.info("✅ Processing complete!")
                         # Store the final result if provided in the complete event
                         final_result = {"response": event_data.get('message')}
                         break
@@ -72,8 +77,8 @@ def stream_agent_request(request_data):
             event_data = json.loads(line[6:])  # Remove 'data: ' prefix
             
             if event_data['type'] == 'agent_event':
-                print(f"🤖 Agent: {event_data['content']}")
+                logger.info(f"🤖 Agent: {event_data}")
             elif event_data['type'] == 'complete':
-                print("✅ Processing complete!")
+                logger.info("✅ Processing complete!")
                 break
     return response.json()

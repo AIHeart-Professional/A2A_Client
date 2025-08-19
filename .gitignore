@@ -10,3 +10,9 @@ logs/
 
 # Virtual environments
 .venv
+
+# VSCode
+.vscode
+
+# env
+.env
